@@ -1,4 +1,7 @@
 import React from "react";
+
+import AppView from "./components/AppView";
+import LoginView from "./components/LoginView";
 import "./App.css";
 import ChangePssw from "./components/ChangePssw"
 import FormEditStudent from "./components/FormEditStudent"
