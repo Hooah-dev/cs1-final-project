@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
-
+import ChangePssw from "./components/ChangePssw"
+import FormEditStudent from "./components/FormEditStudent"
 import TopicsLibrary from "./pages/curriculum/TopicsLibrary";
 import CanddidacyPage from "./components/CandidacyPage";
 import SingIn from "./components/singIn";
@@ -32,15 +33,18 @@ function App() {
       <h1>Frontend CS Final Project</h1>
       <TopicsLibrary />
       <br></br>
-      <CanddidacyPage data={data} onSubmit={(e) => setForm(e)}/>
+     {/*  <CanddidacyPage data={data} onSubmit={(e) => setForm(e)}/> */}
       <Button onClick={()=> console.log(data)}>
         Risultato
       </Button>
       <br></br>
-      <SingIn data={logInData} onSubmit={(e) => setLogInData(e)}/>
+      <ChangePssw/>
+      <br/>
+      <FormEditStudent onSubmit={(e) => setForm(e)}/>
+   {/*  <SingIn data={logInData} onSubmit={(e) => setLogInData(e)}/>}
       <br></br>
       <ConfirmSingIn/>
-      <br></br>
+      <br></br> */}
     </div>
   );
 }
