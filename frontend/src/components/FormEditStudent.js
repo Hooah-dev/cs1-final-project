@@ -38,9 +38,9 @@ let emptyData = {
 };
 
 function Form({ data, onSubmit }) {
-  const entryNationality = data? data.nationality : { code: "", label: "", phone: "" }
+  const entryNationality = data ? data.nationality : { code: "", label: "", phone: "" }
   const classes = useStyles();
-  const [nationality, setValue] = useState( entryNationality);
+  const [nationality, setValue] = useState(entryNationality);
   const [form, setForm] = useState(data || emptyData);
 
   function handleSubmit(event) {
@@ -193,7 +193,7 @@ function Form({ data, onSubmit }) {
             }}
             style={{ width: 300 }}
             options={countries}
-            getOptionSelected={(option)=> option.label}
+            getOptionSelected={(option) => option.label}
             classes={{
               option: classes.option,
             }}
@@ -294,7 +294,7 @@ function Form({ data, onSubmit }) {
         <Button
           disabled={
             form.privacy === "true" &&
-            form.termsCondition === "true"
+              form.termsCondition === "true"
               ? false
               : true
           }
