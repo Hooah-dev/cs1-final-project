@@ -18,13 +18,12 @@ let mokData = {
   address: "Via Roma 123",
   municipality: "Vicenza",
   zipCode: "36100",
-  nationality: { code: 'AS', label: 'American Samoa', phone: '1-684' },
+  nationality: { code: "AS", label: "American Samoa", phone: "1-684" },
   termsCondition: "true",
   privacy: "false",
   images: "true",
-  birthday: "1999-05-12"
+  birthday: "1999-05-12",
 };
-
 
 /*
  function App2() {
@@ -51,5 +50,16 @@ let mokData = {
   );
 } 
 */
-const logged = true; function App() { return <div className="App">{!!logged ? <AppView /> : <LoginView />}</div>; }
+const logged = true;
+function App() {
+  return (
+    <>
+      <link
+        href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet"
+      ></link>
+      <div className="App">{!!logged ? <AppView /> : <LoginView />}</div>
+    </>
+  );
+}
 export default App;
