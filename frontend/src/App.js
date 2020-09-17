@@ -5,6 +5,9 @@ import { Button, ButtonBase } from "@material-ui/core";
 
 import TopicsLibrary from "./pages/curriculum/TopicsLibrary";
 
+import SimpleCard from "./components/DailyActivityCard/DailyActivityC"
+import {ReportProblemIcon} from '@material-ui/icons';
+
 function App() {
   return (
     <div className="App">
@@ -14,6 +17,7 @@ function App() {
       <Button variant="contained" color="primary">
         Primary
       </Button>
+      <SimpleCard />
     </div>
   );
 }
