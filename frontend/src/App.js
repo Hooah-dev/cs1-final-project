@@ -7,17 +7,12 @@ import TopicsLibrary from "./pages/curriculum/TopicsLibrary";
 
 import SimpleCard from "./components/DailyActivityCard/DailyActivityC"
 import {ReportProblemIcon} from '@material-ui/icons';
-
+import Carta from "./components/DailyActivityCard/DailyActivityC"
 function App() {
   return (
     <div className="App">
-      <h1>Frontend CS Final Project</h1>
-      <TopicsLibrary />
-      <AccessAlarm />
-      <Button variant="contained" color="primary">
-        Primary
-      </Button>
-      <SimpleCard />
+      <Carta/>
+     
     </div>
   );
 }
